@@ -7,3 +7,9 @@ Verilog implementation and simulation of digital adder circuits.
 - 16-bit parallel-prefix adder
 
 Designs are tested using Verilog testbenches and EDA Playground simulations.
+
+## Group Members
+- Alexis Medina
+- Anthony Gudino
+- Bompkin
+- Kamil B

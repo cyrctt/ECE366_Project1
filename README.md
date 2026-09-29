@@ -29,7 +29,7 @@ The designs are intended to be tested with Verilog testbenches and can be simula
 
 ## Group members
 
-- Alexis Medina
-- Anthony Gudino
-- Bompkin
+- Alexis M.
+- Anthony G.
+- Husnain H.
 - Kamil B

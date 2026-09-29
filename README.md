@@ -32,4 +32,4 @@ The designs are intended to be tested with Verilog testbenches and can be simula
 - Alexis M.
 - Anthony G.
 - Husnain H.
-- Kamil B
+- Kamil B.

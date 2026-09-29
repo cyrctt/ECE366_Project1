@@ -1,15 +1,15 @@
-module one_bit_full_adder (a, b, cin, s, cout);
+module one_bit_full_adder (A, B, Cin, S, Cout);
 
-    input a, b, cin;
-    output reg s, cout;
+    input A, B, Cin;
+    output reg S, Cout;
     reg temp1, temp2, temp3;
 
     always @(*) begin
-        temp1 = a^b;
-        s = temp1 ^ cin;
-        temp2 = temp1 & cin;
-        temp3 = a & b;
-        cout  = temp2 | temp3;
+        temp1 = A^B;
+        S = temp1 ^ Cin;
+        temp2 = temp1 & Cin;
+        temp3 = A & B;
+        Cout  = temp2 | temp3;
     end
     
 endmodule

@@ -1,14 +1,14 @@
-module one_bit_full_adder (a, b, cin, s, cout)
-    input a, b, cin;
-    output s, cout;
+module one_bit_full_adder (A, B, Cin, S, Cout);
+    input A, B, Cin;
+    output S, Cout;
 
     wire temp1, temp2, temp3;
 
-    xor x1(temp1, a, b);
-    xor x2(s, temp1, cin);
+    xor x1(temp1, A, B);
+    xor x2(S, temp1, Cin);
 
-    and a1(temp2, temp1, cin);
-    and a2(temp3, a, b);
+    and a1(temp2, temp1, Cin);
+    and a2(temp3, A, B);
 
-    or o1(cout, temp2, temp3);
+    or o1(Cout, temp2, temp3);
 endmodule

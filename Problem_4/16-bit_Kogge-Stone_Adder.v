@@ -10,6 +10,8 @@ module KS(A, B, Cin, S, Cout);
 
   
   wire [15:0] p_layer1, g_layer1;
+  assign g_layer1[0] = g_bit[0];
+  assign p_layer1[0] = p_bit[0];
   assign g_layer1[1] = g_bit[1] | (p_bit[1] & g_bit[0]);
   assign p_layer1[1] = p_bit[1] & p_bit[0];
 
@@ -57,6 +59,8 @@ module KS(A, B, Cin, S, Cout);
 
   
   wire [15:0] p_layer2, g_layer2;
+  assign g_layer2[1:0] = g_layer1[1:0];
+  assign p_layer2[1:0] = p_layer1[1:0];
   assign g_layer2[2] = g_layer1[2] | (p_layer1[2] & g_bit[0]);
   assign p_layer2[2] = p_layer1[2] & p_bit[0];
 
@@ -101,6 +105,8 @@ module KS(A, B, Cin, S, Cout);
 
 
   wire [15:0] p_layer3, g_layer3;
+  assign g_layer3[3:0] = g_layer2[3:0];
+  assign p_layer3[3:0] = p_layer2[3:0];
   assign g_layer3[4] = g_layer2[4] | (p_layer2[4] & g_bit[0]);
   assign p_layer3[4] = p_layer2[4] & p_bit[0];
 
@@ -139,6 +145,8 @@ module KS(A, B, Cin, S, Cout);
 
   
   wire [15:0] p_layer4, g_layer4;
+  assign g_layer4[7:0] = g_layer3[7:0];
+  assign p_layer4[7:0] = p_layer3[7:0];
   assign g_layer4[8] = g_layer3[8] | (p_layer3[8] & g_bit[0]);
   assign p_layer4[8] = p_layer3[8] & p_bit[0];
 
